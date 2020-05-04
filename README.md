@@ -68,7 +68,8 @@ Then the keyframe part it may or may not the same as the width of the spriteshee
 Next part is how do we select the next row. Basic principle is remain still the same as above, replace ```width``` with ```height```. EXCEPT for animation duration being ```horizontal animation duration = time to complete vertical animation * number of horizontal steps```.
 
 
-#TLDR aka Summary
+
+## TLDR aka Summary
 
 ```CSS
 .sprite {
