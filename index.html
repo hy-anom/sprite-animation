@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Document</title>
+		<style>
+			.sprite {
+				width: 74.5px; /* Viewport-width */
+				height: 86px; /* Viewport-height */
+				margin: 2em auto; /* Little margin */
+				background: transparent url('./bride-sprite.png') 0 0 repeat;
+				animation: bridewalk-v 0.3s steps(7) infinite,
+					bridewalk-h 1.2s steps(4) infinite;
+			}
+
+			@keyframes bridewalk-v {
+				100% {
+					background-position-x: -522px;
+				}
+			}
+			@keyframes bridewalk-h {
+				100% {
+					background-position-y: -344px;
+				}
+			}
+
+			.sprite-static {
+				margin: 2em auto;
+				width: 520px;
+				height: 350px;
+				background: transparent url('./bride-sprite.png') 0 0 repeat;
+			}
+		</style>
+	</head>
+	<body>
+		<div class="sprite"></div>
+
+		<div class="sprite-static"></div>
+	</body>
+</html>
